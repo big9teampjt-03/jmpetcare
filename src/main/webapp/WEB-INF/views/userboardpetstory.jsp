@@ -53,11 +53,10 @@ text-decoration:underline;}
 				<ul class="dep1">
 					<li><a href="#">작성한 글 </a>
 						<ul class="dep2">
-							<li><a href="#">내 반려견</a></li>
+							<li><a href="/userpet/${user.userid}">내 반려견</a></li>
 							<li><a href="/userboardcounsel/${user.userid}">상담게시판</a></li>
 							<li><a href="/userboardquestion/${user.userid}">자유게시판</a></li>
 							<li><a href="/userboardpetstory/${user.userid}">펫스토리</a></li>
-							<li><a href="/userboardcounsel/${user.userid}">댓글</a></li>
 						</ul></li>
 				</ul>
 			</div>
