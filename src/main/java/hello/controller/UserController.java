@@ -77,6 +77,13 @@ import lombok.RequiredArgsConstructor;
 					model.addAttribute("user",u); 
 					return "/userboardpetstory"; 
 					}
+				//마이페이지폼
+				@GetMapping("/userpet/{userid}") 
+				public String ddetail(@PathVariable Long userid,Model model) { 
+					 User u =  uService.detail(userid);
+					model.addAttribute("user",u); 
+					return "/userpet"; 
+					}
 		//마이페이지에서 상담게시글 전체보기
 			@GetMapping("/boardcounsel/list/{userid}")
 			@ResponseBody
